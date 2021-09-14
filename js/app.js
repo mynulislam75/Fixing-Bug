@@ -17,9 +17,9 @@ const showProducts = (products) => {
     div.classList.add('product');
     div.innerHTML = `
 
-     <div class="card mb-5 ms-2 me-2 bg-light.bg-gradient">
+     <div class="card mb-5 ms-2 me-2" id="card-background-color">
 
-        <div class="product details">
+    <div class="product details">
 
     <img class="product-image card-img-top bg-info" src=${image}></img>
     <h4 class="card-title pt-1">${product.title}</h4>
@@ -31,6 +31,7 @@ const showProducts = (products) => {
     <button id="details-btn" class="btn btn-danger">Details</button>
 
     </div>
+
   </div>
       `;
     document.getElementById("all-products").appendChild(div);

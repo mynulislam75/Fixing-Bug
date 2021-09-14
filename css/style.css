@@ -1,7 +1,10 @@
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
-  background-color: yellowgreen;
+}
+
+#body-bg-color{
+  background-color: mediumseagreen;
 }
 
 /* heading text design */
@@ -15,7 +18,9 @@ body {
   font-weight: 700;
   font-size: 30px;
 }
-
+.text-color{
+  color:rgb(12, 66, 182);
+}
 /* all products container design */
 #all-products {
   display: grid;
@@ -31,15 +36,20 @@ body {
 .card{
  overflow:hidden;
  height:500px;
+ /* background-color: rgb(150, 219, 219); */
  padding-left: 5px;
  padding-right: 5px;
  padding-top: 2px;
 
 }
 
+#card-background-color{
+  background-color:rgb(117, 238, 226);
+}
+
 .card:hover{
   box-shadow: 5px 8px 8px 5px #585757;
-   border: 1px solid black;
+   border: 1px solid rgb(173, 149, 149);
 }
 
 .product-image {
