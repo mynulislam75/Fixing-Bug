@@ -1,65 +1,68 @@
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
+  background-color: yellowgreen;
 }
-.search-field {
-  border: none;
-  border-radius: 50px;
-  padding: 5px;
-  outline: none;
+
+/* heading text design */
+#heading-text-one{
+  color:	#c52929 ;
+  font-weight: 700;
+  font-size: 30px;
 }
-.search-field:hover {
-  outline: none;
-  border: none;
+#heading-text-two{
+  color:	#ff6347;
+  font-weight: 700;
+  font-size: 30px;
 }
-.search-box {
-  border: 1px solid rgb(3, 118, 211);
-  width: 281px;
-  border-radius: 5px;
-  margin: auto;
-  margin-top: 50px;
-  border-right: none;
-}
-.search-button {
-  padding: 10px 50px;
-  border-radius: 25px;
-  margin-left: 20px;
-}
+
+/* all products container design */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid black; */
   text-align: center;
-  width: 100%;
-  margin: auto;
+  width:100%;
+  margin:auto;
   align-items: center;
   justify-content: center;
 }
-.single-product {
-  padding: 10px;
-  transition: 0.6s;
+
+/* design of card */
+.card{
+ overflow:hidden;
+ height:500px;
+ padding-left: 5px;
+ padding-right: 5px;
+ padding-top: 2px;
+
 }
-.single-product:hover {
-  box-shadow: 4px 4px 7px gray;
-  border-radius: 10px;
-  border: 1px solid cyan;
+
+.card:hover{
+  box-shadow: 5px 8px 8px 5px #585757;
+   border: 1px solid black;
 }
+
 .product-image {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
 }
+
+/* design of cart */
 .cart {
   width: 350px;
-  /* border: 1px solid green; */
+  background-color:	#90ee90;
   padding: 10px;
   box-shadow: 10px 10px 20px gray;
   border-radius: 5px;
   margin-right: 30px;
   position: fixed;
+  border-radius: 8px;
 }
+
 .cart-main {
   padding-right: 30px;
 }
+
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
